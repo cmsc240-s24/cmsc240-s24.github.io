@@ -9,7 +9,7 @@ permalink: /lab/4
 
 ### Github Link
 
-Accept this assignment here: [https://classroom.github.com/a/5vLCg45t](https://classroom.github.com/a/5vLCg45t)
+Accept this assignment here: []()
 
 
 ### Running/Compile your program

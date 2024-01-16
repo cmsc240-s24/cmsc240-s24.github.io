@@ -12,7 +12,7 @@ permalink: lab/10
 
 * Use the code in the GitHub repository for this lab.
 
-* Github Classroom Link: [https://classroom.github.com/a/e4ZtT1o_](https://classroom.github.com/a/e4ZtT1o_)
+* Github Classroom Link: []()
 
 ## Overview
 In this lab, you will work in groups of three (there may be one or two group of four), experimenting in the use of git (for your local version of a repository) and GitHub (where, via git, the three of you will combine your work). You will ultimately implement a working solution to a collection of C++ classes/programs that includes:

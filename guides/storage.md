@@ -15,12 +15,11 @@ To find and list your VSCode cache files run this:
 find ~ -name '.browse.VC.db' -exec ls -lh "{}" \;
 ```
 
-To find and delete the cache files whose last modified timestamps are greater than two weeks old run this:
+To find and delete the cache files run this:
 
 ```shell
-find ~ -name '.browse.VC.db' -mtime +14 -exec rm "{}" \;
+find ~ -name '.browse.VC.db' -exec rm "{}" \;
 ```
-
 
 Then list the file again, you should see a decrease in cache files.
 

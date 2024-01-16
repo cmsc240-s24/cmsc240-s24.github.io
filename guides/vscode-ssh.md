@@ -6,7 +6,7 @@ title: VScode with SSH client
 
 # Running VSCode with SSH via `cs01 - cs06.richmond.edu`
 
-> You can use this guide to instead develop using `ssh` connection to `cs01 - cs06.richmond.edu` (the UR Computer Science Linux machines). 
+> You can use this guide write code using VSCode while using `ssh` connection to `cs01 - cs06.richmond.edu` (the UR Computer Science Linux machines). 
 >
 
 1. Install Visual Studio Code (VS Code)
@@ -42,7 +42,7 @@ title: VScode with SSH client
    - Open the command pallet with **F1** key
    - Type/select `Terminal: Create New Terminal` 
    - Alternatively you can `Terminal` menu and select `New Terminal`
-   - Note:  You should be on a remote terminal it will have a prommpt that reads something like `[dbalash@cs01 ~]$`
+   - Note:  You should be on a remote terminal it will have a prompt that reads something like `[dbalash@cs01 ~]$`
 
 2. Follow these steps to generate a ssh-key with `ssh-keygen`
    - In the terminal type
@@ -60,7 +60,7 @@ title: VScode with SSH client
    - This will print out your public key, select and copy it from the terminal
    - Make sure you copy the whole thing beginning with `ssh-rsa` ending with something like `urnetid@cs01` or `urnetid@l1-jps-225-lx07`
   
-4. Go to [github.com](github.com) and add your SSH key
+4. Go to [github.com](https://github.com) and add your SSH key
    - make sure you're logged in
    - select your icon in the upper right
    - select settings

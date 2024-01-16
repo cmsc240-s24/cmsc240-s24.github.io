@@ -12,7 +12,7 @@ permalink: lab/7
 
 * As you work through the lab, answer the questions in the `README.md` file. Enter your answers directly in the `README.md` file.
 
-* Github Classroom Link: [https://classroom.github.com/a/l426vPde](https://classroom.github.com/a/l426vPde)
+* Github Classroom Link: []()
 
 
 ### Objective

@@ -6,7 +6,7 @@ permalink: module/4
 # Module 4: Classes - Abstraction and Encapsulation
 
 * First read this page then start coding module with the GitHub classroom link below.
-* Github Classroom Link: [https://classroom.github.com/a/7derpHYQ](https://classroom.github.com/a/7derpHYQ)
+* Github Classroom Link: []()
 
 
 ## Class implementation:

@@ -14,47 +14,41 @@ aside:
 
 ### Instructor
 
-* **Instructor:** Prof. David G. Balash
+* **Instructor:** Dr. David Balash
 * **Email:** [david.balash@richmond.edu](mailto:david.balash@richmond.edu)
 * **Office Hours:** (Jepson 223)
-  * Tue 3:00PM - 4:00PM
-  * Fri 2:30PM - 4:30PM
+  * Tue 4:30PM - 5:30PM
+  * Fri 3:00PM - 5:00PM
   * and by appointment at [https://calendly.com/davidbalash](https://calendly.com/davidbalash) or by email
 * **Prerequisites:** CMSC 221 with a minimum grade of C- (See [computer science curriculum](https://cs.richmond.edu/Academics/courses/index.html))
 
 ### Meeting Times
 
-#### Class/Lab Info Section 1
-* Lecture (Jepson G04)
-  * Tue 1:30PM - 2:45PM
-  * Thr 1:30PM - 2:45PM
-* Lab (Jespson G03)
-  * Fri 1:30PM - 2:20PM
-
-#### Class/Lab Info Section 2
+## Class/Lab Info
 * Lecture (Jepson G04)
   * Tue 10:30AM - 11:45AM
   * Thr 10:30AM - 11:45AM
 * Lab (Jespson G03)
-  * Fri 12:00PM - 12:50PM
-
-
-
+  * Fri 10:30AM - 11:20AM
 
 ### Course Staff
 - Prof. David G. Balash - Instructor
-- Aris Karamustafić - Lab Assistant and Grader
-- Christ Athiogbey - Grader
-
+- Padmaja Karki - Lab Assistant
+- Maggie Song - Grader
+- Aris Karamustafić - Course Mentor
 
 ## Course Details 
 
+### Welcome to Software Systems Development!
+
+Your dedication and hard work have led you to this moment; you belong here. Congratulations on your achievements, and welcome to the course. I am thrilled to have you here and am looking forward to a semester filled with growth, learning, and success. Together, we will explore, create, and innovate. Let's make this an outstanding semester for everyone!
+
 ### Course Description 
 
-Introduction to techniques necessary for development of large-scale software systems. Topics include the development life cycle; design considerations including OOP, patterns, reuse, and usability; repository management; testing, debugging, and static/dynamic analysis; and group work. Also includes introduction to Unix/Linux environments, and to the C++ programming language, including classes, inheritance, and polymorphism; pointers and dynamic memory allocation; and the C++ Standard Template Library (STL)
+Introduction to techniques necessary for development of large-scale software systems. Topics include the development life cycle; design considerations including OOP, patterns, reuse, and usability; repository management; testing, debugging, and static/dynamic analysis; and group work. Also includes introduction to Unix/Linux environments, and to the C++ programming language, including classes, inheritance, and polymorphism; pointers and dynamic memory allocation; and the C++ Standard Template Library (STL).
 
 ### Learning Outcomes
-By the end of this course, students will:
+By the end of this course, you will:
 
 - Experience modern C++ programming
 - Gain familiarity with Unix/Linux environments
@@ -104,19 +98,16 @@ All books listed here are available in electronic form **for free** on the [O'Re
 - In-class module exercises
 - Lab programming assignments
 - Programming project
-  - Due: Friday, December 1st 5:00PM 
-- Midterm exam 
-  - Tuesday, October 10th
-- Final exam 
-  - Section 1: Thursday, December 14th 2:00PM - 5:00PM
-  - Section 2: Monday, December 11th 2:00PM - 5:00PM 
+- Project presentation
+- 4 In-class quizzes
 
 
 ### Grading Breakdown
-   * 10%: Module exercises
+   * 15%: Module exercises
    * 40%: Labs 
    * 20%: Project
-   * 30%: Exams (2 x 15% each)
+   *  5%: Project Presentation 
+   * 20%: Quizzes (In-class 4 x 5% each)
 
 
 ### Programming Expectations
@@ -136,7 +127,7 @@ You are expected to submit well-written code:
 
 Assignments including modules and labs may be submitted late with a **10%** deduction **per day** late.  
 
-Each student will have two "**late passes**" per semester to use on modules and labs.  To use a late pass, notify me which assignment you would like to use it on, and you may turn that assignment in **one week late for full credit**. 
+You will have two "**late passes**" per semester to use on modules and labs.  To use a late pass, notify me which assignment you would like to use it on, and you may turn that assignment in **one week late for full credit**. 
 
 Late passes may **not** be used on the final project or exams.   
 
@@ -144,7 +135,7 @@ In cases of personal illnesses, emergencies, or documented accommodations, assig
 
 
 ### Attendance Policy
-Regular attendance for the entire class time is expected. Students should not miss more than 4 total sessions (including lecture and lab). Students who have to quarantine due to COVID or miss class for other legitimate reasons will not be penalized for their absence during those classes.
+Regular attendance for the entire class time is expected. You should not miss more than 4 total sessions (including lecture and lab). If you have to quarantine due to COVID or miss class for other legitimate reasons you will not be penalized.
    
 
 ### Self-Guided Module exercises
@@ -154,7 +145,7 @@ Each lecture will be accompanied by a *self-guided worksheet*. This module exerc
 
 ### Labs
 
-Labs are short-to-medium size programming assignments that are designed to reinforce lecture. This course has a formal laboratory component. You are expected to attend each lab for the entire 50 minute lab period. Some labs may require that students work in teams of two or more. Almost all labs will require more than the 50 minute alloted time to complete, so please expect to have to spend extra time on the labs.
+Labs are short-to-medium size programming assignments that are designed to reinforce lecture. This course has a formal laboratory component. You are expected to attend each lab for the entire 50 minute lab period. Some labs may require that you work in teams of two or more. Almost all labs will require more than the 50 minute alloted time to complete, so please expect to have to spend extra time on the labs.
 
 Labs are due at 11:59 pm on the night prior to the next lab (for this course, that means 11:59 pm Thursday evening), unless I explicitly provide a different deadline. Note that some labs are more like programming projects, so might require two weeks to complete. In that case I will explicitly inform you of this. 
 
@@ -164,18 +155,18 @@ Labs are due at 11:59 pm on the night prior to the next lab (for this course, th
 The programming project will be written in the C++ language, and must compile without warnings using the GNU g++ compiler and the -Wall flag on the department's Linux machines (cs01 - cs06 and turing2). 
 
 
-### Exams
+### Quizzes
 
-There are two comprehensive exams in this class. Each exam is worth 15% of your grade, for a total 30%.
+There are four in-class quizzes. Each quiz is worth 5% of your grade, for a total 20%.
 
 
 ## Class Communication
 
-We will use two primary forms of communication in this class: email announcements and Ed. You are responsible for remaining up to date on any information sent by email or posted to Ed. This may include clarifications to assignments, updates on grading rubrics, and changes in office hours. 
+I will use two primary forms of communication in this class: email announcements and Slack. You are responsible for remaining up to date on any information sent by email or posted to Slack. This may include clarifications to assignments, updates on grading rubrics, and changes in office hours. 
 
-For all general course information, questions, and clarifications, you should preference to using Ed. An instructor, lab assistant, or even your fellow classmate can then answer a question. You can even post your questions anonymously. 
+For all general course information, questions, and clarifications, please use Slack. I hope that the Slack workspace can be an extension of our classroom community where we can share questions and answers for the entire class to view and learn from.
 
-If you have personal, individual issues you'd like addressed, you should send those by email to me. However, all course related topics should be directed to Ed.
+If you have personal, individual issues you'd like addressed, you should send those by email to me. However, all course related topics should be directed to Slack.
 
 
 ## Course Policies
@@ -199,7 +190,7 @@ You may:
 - Discuss general approaches to solving the homework problems with other students, but the pen-to-paper, fingers-to-keyboard work should be your own. 
 - Have another student look at a specific snippet of your code (e.g., 10 lines) to help you debug a programming error.
 
-You may NOT:
+You may not:
 
 - Copy code to or from other students or people outside of the class.
 - Have someone else write code for you.
@@ -218,11 +209,9 @@ You must:
 - Understand any code that you use. We reserve the right to review your submitted code with you, and ask you to explain how it works. 
 
 You may:
-
 - Ask a GenAI tool a generic question for informational purposes. For example, "Please explain the C++ syntax for reading input from a file, and give an example."  If you use this code, please cite the source in a comment.
 
 You may not:
-
 - Ask a GenAI tool to solve the assignment.  For example, you should not paste the entire problem description and ask the GenAI to solve it for you.
 - No GenAI tools can be used for the exams.
 

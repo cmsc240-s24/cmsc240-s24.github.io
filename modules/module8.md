@@ -6,7 +6,7 @@ permalink: module/8
 # Module 8: Build Automation with Make
 
 * First read this page then start the module with the GitHub classroom link below.
-* Github Classroom Link: [https://classroom.github.com/a/vB9vg5Lp](https://classroom.github.com/a/vB9vg5Lp)
+* Github Classroom Link: []()
 
 ## Compilation
 

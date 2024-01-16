@@ -6,7 +6,7 @@ permalink: module/12
 # Module 12: C++ Smart Pointers
 
 * First read this page then start the module with the GitHub classroom link below.
-* Github Classroom Link: [https://classroom.github.com/a/BXYsXD9G](https://classroom.github.com/a/BXYsXD9G)
+* Github Classroom Link: []()
 
 
 ## Exercise 1: Basic Usage of `unique_ptr`
