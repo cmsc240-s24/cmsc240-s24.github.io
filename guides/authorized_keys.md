@@ -108,7 +108,7 @@ Note you only need to do this once.
         IdentityFile ~/.ssh/id_rsa
     ```
     - **Replace urnetid with your University of Richmond network id**. For example, dbalash for me. 
-    - Save and exit nano, by typing Ctrl-X, the type Y (for yes), and hit enter to accept the file name to save to is authorized_keys.
+    - Save and exit nano, by typing Ctrl-X, the type Y (for yes), and hit enter to accept the file name to save to is ./ssh/config.
 
 8. Connect again to the UR CS Linux machines.
     - In a terminal type
