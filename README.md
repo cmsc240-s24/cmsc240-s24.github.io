@@ -1,1 +1,1 @@
-# cmsc240-f23.github.io
+# cmsc240-s24.github.io

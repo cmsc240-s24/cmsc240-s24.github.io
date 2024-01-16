@@ -7,7 +7,7 @@ title: CMSC 240 Software Systems Development - Spring 2024
     <div class="footer-col-wrapper">
         <div class="footer-col two-col-1">
             <ul class="contact-list">
-                <li><b><a href="https://cs.richmond.edu/faculty/dbalash/">Prof. David G. Balash</a></b></li>
+                <li><b><a href="https://cs.richmond.edu/faculty/dbalash/">Dr. David Balash</a></b></li>
                 <li><a href="mailto:david.balash@richmond.edu">david.balash@richmond.edu</a></li>
                 <li>Office Hours (Jepson 223):
                     <ul>
