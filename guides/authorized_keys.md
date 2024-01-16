@@ -12,7 +12,7 @@ Note you only need to do this once.
 >
 
 1. Follow these steps to generate a ssh-key with `ssh-keygen`
-   - Open a terminal on **your laptop** type
+   - Open a terminal on **your laptop** and type
    ```
    ssh-keygen -t rsa -b 4096
    ```
@@ -72,40 +72,40 @@ Note you only need to do this once.
     ```
     - Add the following lines to the file
     ```
-    Host cs01
-    HostName cs01.richmond.edu
-    User urnetid
-    IdentityFile ~/.ssh/id_rsa
+        Host cs01
+        HostName cs01.richmond.edu
+        User urnetid
+        IdentityFile ~/.ssh/id_rsa
 
-    Host cs02
-    HostName cs02.richmond.edu
-    User urnetid
-    IdentityFile ~/.ssh/id_rsa
+        Host cs02
+        HostName cs02.richmond.edu
+        User urnetid
+        IdentityFile ~/.ssh/id_rsa
 
-    Host cs03
-    HostName cs03.richmond.edu
-    User urnetid
-    IdentityFile ~/.ssh/id_rsa
+        Host cs03
+        HostName cs03.richmond.edu
+        User urnetid
+        IdentityFile ~/.ssh/id_rsa
 
-    Host cs04
-    HostName cs04.richmond.edu
-    User urnetid
-    IdentityFile ~/.ssh/id_rsa
+        Host cs04
+        HostName cs04.richmond.edu
+        User urnetid
+        IdentityFile ~/.ssh/id_rsa
 
-    Host cs05
-    HostName cs05.richmond.edu
-    User urnetid
-    IdentityFile ~/.ssh/id_rsa
+        Host cs05
+        HostName cs05.richmond.edu
+        User urnetid
+        IdentityFile ~/.ssh/id_rsa
 
-    Host cs06
-    HostName cs06.richmond.edu
-    User urnetid
-    IdentityFile ~/.ssh/id_rsa
+        Host cs06
+        HostName cs06.richmond.edu
+        User urnetid
+        IdentityFile ~/.ssh/id_rsa
 
-    Host turing2
-    Hostname turing2.richmond.edu
-    User urnetid
-    IdentityFile ~/.ssh/id_rsa
+        Host turing2
+        Hostname turing2.richmond.edu
+        User urnetid
+        IdentityFile ~/.ssh/id_rsa
     ```
     - **Replace urnetid with your University of Richmond network id**. For example, dbalash for me. 
     - Save and exit nano, by typing Ctrl-X, the type Y (for yes), and hit enter to accept the file name to save to is authorized_keys.
