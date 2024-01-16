@@ -11,7 +11,7 @@ title: Schedule
 
 | Week | Lecture (Tue)                              | Lecture (Thr)                                 | Lab (Fri)                                        |
 | :--- | :---                                       | :---                                          | :---                                                  |
-| 1    | Jan 16:  Read Text: Chapter 2<br />Read [Unix Tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/): Intro, T1, T2, T3<br />Slides: [Introduction](lectures/01-Introduction.pdf)              | Jan 18:                                       | Jan 19:                   |
+| 1    | Jan 16:  <br />Read Text: Chapter 2<br />Read [Unix Tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/): Intro, T1, T2, T3<br />Slides: [Introduction](lectures/01-Introduction.pdf)              | Jan 18:                                       | Jan 19:                   |
 | 2    | Jan 23:     | Jan 25:     | Jan 26:                |
 | 3    | Jan 30:     | Feb 1:      | Feb 2:                 |
 | 4    | Feb 6:      | Feb 8:      | Feb 9:                 |
