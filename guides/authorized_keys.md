@@ -28,11 +28,11 @@ Note you only need to do this once.
    - Make sure you copy the whole thing beginning with `ssh-rsa` ending with something like `dbalash@m1-mcs-dbalash`
 
 3. Open a new terminal and login to cs01.richmond.edu via ssh.
-   - In the terminal type
+   - In the terminal type (but replace `<YOUR UR LOGIN>` with your university login, for example mine is `dbalash` )
    ```
    ssh <YOUR UR LOGIN>@cs01.richmond.edu
    ```
-   - Enter your password when prompted.
+   - Enter your password when prompted. (__Note__: you will not see the password characters as you type them.)
    - If you see a message like this
    ```
    RSA key fingerprint is 96:a9:23:5c:cc:d1:0a:d4:70:22:93:e9:9e:1e:74:2f.
