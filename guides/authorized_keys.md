@@ -70,6 +70,8 @@ Note you only need to do this once.
     ```
     nano .ssh/config
     ```
+    Note: if you are on a Windows PC and nano is not installed, you can try notepad.exe like this `notepad.exe .ssh/config`
+
     - Add the following lines to the file
     ```
         Host cs01
