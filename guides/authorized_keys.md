@@ -8,8 +8,7 @@ title: Setup Authorized Keys
 
 > You can use this guide to connect via `ssh` to `cs01 - cs06.richmond.edu` (the UR Computer Science Linux machines) without using a password, but instead use an authorized public/private key pair.
 
-Note you only need to do this once.
->
+> Note you only need to do this once.
 
 1. Follow these steps to generate a ssh-key with `ssh-keygen`
    - Open a terminal on **your laptop** and type
