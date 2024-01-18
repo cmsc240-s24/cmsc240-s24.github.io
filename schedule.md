@@ -11,7 +11,7 @@ title: Schedule
 
 | Week | Lecture (Tue)                              | Lecture (Thr)                                 | Lab (Fri)                                        |
 | :--- | :---                                       | :---                                          | :---                                                  |
-| 1    | Jan 16:  <br />Read Text: Chapter 2<br />Read [Unix Tutorial](https://users.cs.duke.edu/~alvy/courses/unixtut/): Intro, T1, T2, T3<br />Slides: [Introduction](lectures/01-Introduction.pdf)              | Jan 18:  <br /> Slides: [C++ Basics](lectures/02-Language-Basics)<br /> Module 1: [Hello C++](modules/module1.md) <br />Read [Unix Tutorial](https://users.cs.duke.edu/~alvy/courses/unixtut/): T4, T5, T6                                     | Jan 19:                   |
+| 1    | Jan 16:  <br />Read Text: Chapter 2<br />Read [Unix Tutorial](https://users.cs.duke.edu/~alvy/courses/unixtut/): Intro, T1, T2, T3<br />Slides: [Introduction](lectures/01-Introduction.pdf)              | Jan 18:  <br /> Slides: [C++ Basics](lectures/02-Language-Basics.pdf)<br /> Module 1: [Hello C++](modules/module1.md) <br />Read [Unix Tutorial](https://users.cs.duke.edu/~alvy/courses/unixtut/): T4, T5, T6                                     | Jan 19:                   |
 | 2    | Jan 23:     | Jan 25:     | Jan 26:                |
 | 3    | Jan 30:     | Feb 1:      | Feb 2:                 |
 | 4    | Feb 6:      | Feb 8:      | Feb 9:                 |
