@@ -13,9 +13,9 @@ title: Resources
 * [Compiler Explorer](https://godbolt.org/)
 * [DrawIO for drawing UML diagrams](https://app.diagrams.net/)
 * [Lucidchart for drawing UML diagrams](https://www.lucidchart.com/pages/)
-* [Unix Tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/)
+* [Unix Tutorial](https://users.cs.duke.edu/~alvy/courses/unixtut/)
 * [Regex101](https://regex101.com/)
 * [Guide to Markdown](https://www.markdownguide.org/cheat-sheet/) 
-* [Lecture Code Examples](https://github.com/cmsc240-f23/code)
+* [Lecture Code Examples](https://github.com/cmsc240-s24/lecture-code-examples)
 * [Project Example: Music Store](https://github.com/cmsc240-f23/MusicStore)
 
