@@ -55,7 +55,7 @@ Welcome to the Personal Diary Management System 1.0
 
 Choose an operation:
 (x) : Exit
-(n) : Creat a New Entry
+(n) : Create a New Entry
 (r) : Read an Entry
 (a) : Append to an Entry
 n
@@ -67,7 +67,7 @@ END
 
 Choose an operation:
 (x) : Exit
-(n) : Creat a New Entry
+(n) : Create a New Entry
 (r) : Read an Entry
 (a) : Append to an Entry
 a
@@ -78,7 +78,7 @@ END
 
 Choose an operation:
 (x) : Exit
-(n) : Creat a New Entry
+(n) : Create a New Entry
 (r) : Read an Entry
 (a) : Append to an Entry
 r
@@ -91,7 +91,7 @@ The program worked!
 
 Choose an operation:
 (x) : Exit
-(n) : Creat a New Entry
+(n) : Create a New Entry
 (r) : Read an Entry
 (a) : Append to an Entry
 r
@@ -100,7 +100,7 @@ Could not find diary entry for 2025_01_01
 
 Choose an operation:
 (x) : Exit
-(n) : Creat a New Entry
+(n) : Create a New Entry
 (r) : Read an Entry
 (a) : Append to an Entry
 x
