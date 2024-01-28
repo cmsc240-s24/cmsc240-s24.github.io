@@ -32,7 +32,7 @@ aside:
   * Fri 10:30AM - 11:20AM
 
 ### Course Staff
-- Prof. David G. Balash - Instructor
+- Dr. David Balash - Instructor
 - Padmaja Karki - Lab Assistant
 - Maggie Song - Grader
 - Aris Karamustafić - Course Mentor
@@ -81,7 +81,7 @@ There will be assigned reading from the following book which is available electr
 
 ### Resources
 
-The following books are **NOT REQUIRED** for this course. Instead it is a list of recommended resources for you to reference in addition to the course notes provided for you. These include:
+The following books are **not required** for this course. Instead it is a list of recommended resources for you to reference in addition to the course notes provided for you. These include:
 
 - [Effective Modern C++](https://richmond.primo.exlibrisgroup.com/permalink/01URICH_INST/191gg5k/alma9928104160306241) by Scott Meyers
 
