@@ -25,8 +25,8 @@ title: CMSC 240 Software Systems Development - Spring 2024
 * Aris Karamustafić  (CMSC 240 Course Mentor)
     * Thursdays 5:00PM - 6:30PM Jepson G04
 
-* Maggie Song (Computer Science department tutor)
-    * Mondays 5:00PM - 6:30PM Jepson second floor
+* Maggie Song (Computer Science Tutor)
+    * Mondays 6:00PM - 8:00PM Jepson 231
 
 
 ## Class/Lab Info
