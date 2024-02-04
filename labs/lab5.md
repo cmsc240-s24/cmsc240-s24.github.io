@@ -1,114 +1,148 @@
 ---
 layout: default
-permalink: lab/5
+permalink: /lab/5
 ---
 
-# Lab 5: Inheritance and Polymorphism
+# Lab 5: Enigma 
 
-### Instructions
-* In this lab you will work in **teams of two**, though each of you needs to commit and push to **your own individual GitHub repository**. There may be one group of size three. You will use the technique of **pair programming**, see description at the bottom of this page.
+## Preliminaries
 
-* Write the names of each team member at the top of your README.md file in your individual repositories. 
+### Github Link
 
-* First read this page then start coding the lab with the GitHub classroom link below.
-
-* Put your code in the GitHub repository for this lab.
-
-* Github Classroom Link: []()
+Accept this assignment here: []()
 
 
-### Objective
-Design and implement an inventory system to manage different types of wearable tech products using __inheritance__ and __polymorphism__.
+### Running/Compile your program
 
-## Wearable Tech Inventory System
+You should compile your program using `g++` with the `-Wall` command line option to show all warnings. You will also need to compile multiple .cpp files. The specific command line for compiling is:
 
-### Problem Statement:
-A tech store sells various wearable devices such as smartwatches, fitness trackers, and augmented reality (AR) glasses. These devices have some common attributes, but each also has unique features.
-
-#### Base Class - __WearableDevice__:
-
-- Data Members:
-   - `brand`: a string representing the device's brand.
-   - `price`: a float representing the device's price.
-   - `quantity`: an int representing the number of units in stock.
-- Member Functions:
-   - `getInfo()`: Virtual function to print device details.
-   - `sell(int units)`: Reduce the quantity by a specified number of units.
-   - `restock(int units)`: Increase the quantity by a specified number of units.
-
-
-#### Derived Classes
-
-- __Smartwatch__:
-   - Additional Data Members:
-      - `screenSize`: a float representing the display size in inches.
-      - `hasGPS`: a boolean indicating if the watch has GPS.
-      - Overrides `getInfo()` to include screen size and GPS information.
-
-- __FitnessTracker__:
-   - Additional Data Members:
-      - `heartRateMonitor`: a boolean indicating if it has a heart rate monitor.
-      - `batteryLife`: an int representing battery life in hours.
-      - Overrides `getInfo()` to include heart rate monitor and battery life.
-
-- __ARGlasses__:
-   - Additional Data Members:
-      - `fieldOfView`: an int representing the field of view in degrees.
-      - `interactiveSurface`: a boolean indicating if it projects interactive surfaces.
-      - Overrides `getInfo()` to include field of view and interactive surface details.
-
-<div class="requirement">
-Review the code in testdevices.cpp, WearableDevice.h, and WearableDevice.cpp.  Then write the code for the classes ARGlasses, FitnessTracker, and SmartWatch using the problem statement description above.  Your new classes should extend the WearableDevice class to inherit the functionality. I have created the `.cpp` and `.h` files in the lab repository, and you should write your code where it says `// Write your code here...`
-
-When you finish and test your code by running the main function in the testdevices.cpp file.
-
-```shell
-$ g++ ARGlasses.cpp FitnessTracker.cpp SmartWatch.cpp WearableDevice.cpp testdevices.cpp -o testdevices
-
-$ ./testdevices 
+```Shell
+g++ -Wall usage.cpp comms.cpp Enigma.cpp Rotor.cpp -o comms
 ```
 
-Here is a sample of what the output should look like
+### Testing your lab
+
+There is a `test.sh` file in the repository to help you test your program.
+
+```Shell
+./test.sh
 ```
-Brand: Apple
-Price: $399.99
-Quantity: 10
-Screen Size: 1.7 inches
-GPS: Yes
--------------------------------
-Brand: Fitbit
-Price: $149.99
-Quantity: 15
-Heart Rate Monitor: Yes
-Battery Life: 24 hours
--------------------------------
-Brand: MagicLeap
-Price: $2295
-Quantity: 5
-Field of View: 50 degrees
-Interactive Surface: Yes
--------------------------------
-Selling 3 Apple smartwatches...
-Remaining stock for Apple smartwatch: 7
-Restocking 5 Fitbit trackers...
-New stock for Fitbit tracker: 20
-```
+
+
+## Enigma Machines (simplified model)
+
+The Enigma machine was used by the Germans in WWII to send encoded messages. At the time, it was a breakthrough in cryptography, and was essentially an extremely advanced substitution cipher. The Enigma machine is also famous for not just being a very advanced cipher, but also because it was broken by none other than Alan Turning, whom many consider the founder of computer science.
+
+In this lab, we will model a simplified version of the Enigma machine. 
+
+
+### What you need to know for this lab
+
+What you need to know for this lab: Enigma machines used interchangeable rotors that could be placed in different orientations to obtain different substitution patterns. More significantly, the rotors rotated after each character was encoded, changing the substitution pattern and making the code very difficult to break. The behavior of the rotating rotors can be modeled, in a simplified form, by a device consisting of labeled, concentric rings. For example, the picture here has three rings labeled with the letters of the alphabet and '#' (representing a space).
+
+To encrypt a character using this model, find the character on the inner rotor (i.e., the inside ring) and note the character aligned with it on the outer rotor (i.e., the outside ring), then find that character on the middle rotor (i.e., the middle ring) and output the one aligned with it on the outer rotor. After a character is encrypted, turn the inner rotor clockwise one step. Whenever the inner rotor returns to its original orientation, the middle rotor turns once in lock-step, just like the odometer in a car.
+
+<div style="text-align:center">
+![](/images/enigma.gif)
 </div>
 
-+
+For example, in this configuration the character 'A' would be encrypted as 'N', since 'A' on the inner rotor is aligned with 'H' on the outer rotor, and 'H' on the middle rotor is aligned with 'N' on the outer rotor. After performing this encryption, the inner rotor is rotated clockwise, so the letter 'A' would next be encrypted as 'D'.
+
+
+Note that decrypting a message requires following the same steps, only in reverse: Find the character on the outer rotor, note the character aligned with it on the middle rotor, find that character on the outer rotor, then output the character aligned with it on the inner rotor. Don't forget to rotate the rotors after each letter is decrypted. The rotor is also rotated clockwise during decryption. 
+
+## Task Requirements
+
+### The Task
+
+You will define a class `Rotor` to simulate the workings of a single rotor, and the class `Enigma` to simulate the workings of an Enigma machine using `Rotor` instances. You will be provided a source code file `comms.cpp` (with a `main` method) as part of the initial material. You should read that file to see how `Enigma` instances are suppose to be used.
+
+**You may not alter `comms.cpp` in any way.** 
+
+Your task is to write both `Enigma` and `Rotor` using proper OOP design with class constructors, information hiding (private members), and encapsulation.
+
+### The `Rotor` Class
+
+The `Rotor` class represents a rotor, including the values of the characters in the rotor and its current orientation (which character is currently on top of the rotor). A good strategy for representing this would be to store the characters in a `string` of length 27 (`#` indicating space) -- index 0 is the top most character. Note that `Rotor`s rotate! And after a full rotation, the next outer rotor rotates (like a odometer in a car). That means you'll need to remember where the rotor started. All of this can lead to some good OOP! :)
+
+For example, your 'Rotor' class should be able to do the following
+
+1.    Be constructed, requiring a `string` that defines the rotor and a single character defining the symbol that should be initially at the top of the rotor. Note: in the constructor, you can call other methods, like the method to rotate to align the rotor to the initial character!
+2.    Rotate one click clockwise. This should involve changing the `string`.
+3.    Return the index in the `string` at which a given character appears.
+4.    Return the character at a given index in the `string`. 
+
+An example of a rotor `String` is `#GNUAHOVBIPWCJQXDKRYELSZFMT` ... which you are to interpret circularly, so that the last character loops around to the first. If you imagine that the first positition indicates the top spot on the rotor, then:
+
+`#GNUAHOVBIPWCJQXDKRYELSZFMT` rotated one click clockwise is `T#GNUAHOVBIPWCJQXDKRYELSZFM`
+
+### The `Enigma` Class
+
+This we leave partly up to you. We expect your Engima to have 5 possible rotors, and when your Enigma class is created, it chooses which 3 to use along with their rotor starting symbols. You must hardcode the 5 possible rotors in your class as the following Strings:
+
+1. `#GNUAHOVBIPWCJQXDKRYELSZFMT`
+2. `#EJOTYCHMRWAFKPUZDINSXBGLQV`
+3. `#BDFHJLNPRTVXZACEGIKMOQSUWY`
+4. `#NWDKHGXZVRIFJBLMAOPSCYUTQE`
+5. `#TGOWHLIFMCSZYRVXQABUPEJKND`
+
+You must also have encrypt and decrypt methods for encrypting and decrypting strings. These must be compatible with the comms.cpp file that we give you. The behavior in these methods must follow the enigma procedure described above in "Our Simple Model of the Enigma". 
+
+### The `comms` code
+
+**Note you should not edit the `comms.cpp` file**, but you do need to know how it works. 
+
+This is the program's main class, and it is provided for you. The program takes as input (from the command line) the three rotors and their starting characters. A correct call to the program `comms` will provide all the information needed to setup enigma for that encryption/decryption session on the command-line, and the actual string to encrypt/decrypt should be input from standard in.
+
+```
+                  ,-- inner rotor initially positioned so X is on top
+                  |,-- middle rotor initially positioned so # is on top
+                  ||  ,-- outer rotor initially positioned so Y is on top
+                  || /
+./comms 4 2 3 "X#Y" encrypt
+           | | |
+           | | `-- outer rotor is rotor 3
+           | `-- middle rotor is rotor 2
+           `-- inner rotor is rotor 4
+```
+
+
+A couple example runs are here. You must also make your own tests and fully test your code:
+
+```
+./comms 1 2 3 "###" encrypt
+AAA
+NDU
+```
+
+```
+./comms 3 1 2 "SAT" encrypt
+DO#YOUR#BEST#AND#KEEP#ON#KEEPIN#ON
+ACAAFAEOZFWKBQKPXZOGIKXTNPEBDXWQCZ
+```
+
+```
+./comms 5 2 4 "EST" decrypt
+CSHIAWDFGDCOE#EZKJHRWAZDDCBCILON#PKUJEXEXSHINZ
+THE#NATIONAL#ANIMAL#OF#SCOTLAND#IS#THE#UNICORN
+```
+
+## Submission
 
 <div class="requirement">
-When you finish writing and testing the code. In your README.md file write a brief description of how the testdevices.cpp file is using polymorphism. 
+You must submit
+
+1. `Enigma.h` : `Enigma` class declaration header file
+2. `Enigma.cpp` : `Enigma` class member definition file
+3.  `Rotor.h` : `Rotor` class declaration header file
+4. `Rotor.cpp` : `Rotor` class member definition file
+5. `README.md` : Answer questions and describe your work in this lab
+
+Your `Enigma` and `Rotor` classes must meet the specifications above. 
+
 </div>
 
-+
-
-<div class="requirement">
-Draw a UML diagram of the completed inventory system.  Include a picture of your diagram in the repository. Put the name of your diagram file in the README.md so we know what to look for when grading.
-</div>
-
-
-## Grading Rubric
+---
 
 ### Total Points: 100
 
@@ -121,7 +155,8 @@ Draw a UML diagram of the completed inventory system.  Include a picture of your
    - Error Handling (5 points)
       - Code gracefully handles unexpected inputs or scenarios without crashing: ___/5
 - Completeness (40 points)
-   - All required functionality is implemented: ___/40
+   - All required functionality is implemented: ___/20
+   - Answered lab questions in the README.md: ___/20
 - Code Quality (30 points)
     - Readability (10 points)
         - Code has meaningful variable and function names: ___/5
@@ -134,8 +169,9 @@ Draw a UML diagram of the completed inventory system.  Include a picture of your
         - Each function has a comment explaining its purpose, inputs, and outputs: ___/5
         - Inline comments explain non-obvious sections of the code: ___/2
 
+---
 
-## Pair programming
+#### Acknowledgements
 
-Pair programming is a software development technique in which two programmers work together at one computer. One, the **driver**, writes code while the other, the **navigator**, reviews each line of code as it is typed in. **The two programmers switch roles frequently.**
+This lab was adopted from CS2113 (Spring 2022) at GW.
 

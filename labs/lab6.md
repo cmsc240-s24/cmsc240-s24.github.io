@@ -3,99 +3,139 @@ layout: default
 permalink: lab/6
 ---
 
-# Lab 6: C++ Debugging Lab: Working with the VSCode Debugger
+# Lab 6: Inheritance and Polymorphism
 
 ### Instructions
-* First read this page then start working on lab with the GitHub classroom link below.
+* In this lab you will work in **teams of two**, though each of you needs to commit and push to **your own individual GitHub repository**. There may be one group of size three. You will use the technique of **pair programming**, see description at the bottom of this page.
+
+* Write the names of each team member at the top of your README.md file in your individual repositories. 
+
+* First read this page then start coding the lab with the GitHub classroom link below.
 
 * Put your code in the GitHub repository for this lab.
-
-* After you complete the lab, answer the questions in the README.md file. Enter your answers directly in the README.md file.
 
 * Github Classroom Link: []()
 
 
 ### Objective
-Familiarize yourself with the essential features of the VSCode Debugger while working with a C++ programs.
+Design and implement an inventory system to manage different types of wearable tech products using __inheritance__ and __polymorphism__.
 
-### Debugging - Part 1
-* __Setup__:
-    - Open the file `ecommerce.cpp` in the `Part1` directory in the repository.
-* __Setting Breakpoints__:
-    - Set a __breakpoint__ at the start of the `main` function.
-    - Set another __breakpoint__ inside the `processOrder` function.
-    - Add a third __breakpoint__ in the `applyDiscount` function.
-* __Start Debugging__: 
-    - Launch the debugger. First click the debug icon in the activity bar on the left. Then click the "Run and Debug" button. 
-* __Stepping Through the Code__:
-    - When the debugger pauses at main, press "Step Over" until you get to the `processOrder` function call.
-    - Now, press "Step Into" to dive into the `processOrder` function.
-    - Inside the `processOrder` function, you'll soon see the `applyDiscount` function call. First, press "Step Over" to notice how you skip the internals of `applyDiscount` and directly get its return value.
-    - Run the `processOrder` function again. This time, when you're at `applyDiscount`, press "Step Into" to go inside it and inspect its inner workings.
-* __Observing the Call Stack__:
-    - Inside the `applyDiscount` function, take a moment to observe the CALL STACK pane. You should see the function hierarchy: `applyDiscount` called from `processOrder` which was called from `main`.
-* __Modifying Variables & Stepping Out__:
-    - In the `applyDiscount` function, under the VARIABLES section, change the value of user to "Jane Doe".
-    - After making this change, press "Step Out" to move back to the `processOrder` function and observe how the change impacts the total cost.
-* __Completing Execution__:
-    - Press "Continue" to complete the program.
-    - Expected Output:
-    ```
-    Total Cost for John Doe: $50.99
-    ```
-    - Note: If the user was changed to "Jane Doe" during debugging, the discount wouldn't be applied, and the total cost would be $55.99.
+## Wearable Tech Inventory System
 
-### Debugging - Part 2
+### Problem Statement:
+A tech store sells various wearable devices such as smartwatches, fitness trackers, and augmented reality (AR) glasses. These devices have some common attributes, but each also has unique features.
 
-* __Setup__:
-    - Open the file `Student.cpp` in the `Part2` directory in the repository.
-* __Setting Breakpoints__: 
-    - Set __breakpoints__ inside the `read_students_from_file` function and inside the `catch` block in the `main` function.
-* __Start Debugging__: 
-    - Start debugging. 
-    - As the debugger stops at the __breakpoint__, inspect:
-        * The state of the file object to ensure the file has been read correctly.
-        * The values of the `name` and `age` variables.
-        * The contents of the students vector after reading from the file.
-* __Debugging with Error Handling__:
-    - Intentionally introduce an error by renaming the `students.txt` file to `students_renamed.txt`.
-    - Debug the program again. This time, the debugger should stop inside the `catch` block.
-    - Inspect the thrown exception's message by examining the `ex` variable.
-    - Fix the error by renaming the file back to `students.txt` or updating the filename in the code.
-* __Enhance the `Student` class__: 
-    - Add more attributes, such as `grade` or `major`. 
-    - Modify the file I/O functions accordingly and use the debugger to ensure everything works as expected.
-    - Introduce a few more intentional errors or exceptions and practice using the debugger to catch and understand them.
+#### Base Class - __WearableDevice__:
+
+- Data Members:
+   - `brand`: a string representing the device's brand.
+   - `price`: a float representing the device's price.
+   - `quantity`: an int representing the number of units in stock.
+- Member Functions:
+   - `getInfo()`: Virtual function to print device details.
+   - `sell(int units)`: Reduce the quantity by a specified number of units.
+   - `restock(int units)`: Increase the quantity by a specified number of units.
 
 
-### Debugging - Part 3
+#### Derived Classes
 
-* __Setup__:
-    - Open the file `factorial.cpp` in the `Part3` directory in the repository.
-* __Setting Breakpoints__: 
-    - Set a __breakpoint__ inside the factorial function.
-* __Start Debugging__: 
-    - Launch the debugger.
-    - As the debugger stops at the __breakpoint__:
-        * Inspect Variables: Hover over the variable n to observe its value during each recursive call.
-        * Step Through the Code: Use the step-over and step-into buttons to navigate through the recursive calls.
-    - Try to identify the reason why the recursion never terminates.
-* __Fixing the Recursive Function__:
-    - Once you've identified the missing base case, modify the factorial function to include a termination condition for the recursion.
-    - Debug the program again to ensure the recursive function now works correctly.
-    - Expected Output:
-    ```
-    Factorial of 10 is: 3628800
-    ```
-* __Now try__: 
-    - Modifying the input value (number) to larger values and see how high you can go before running into potential issues. 
-    - Observe how the call stack grows with larger input values.
-    - Introduce other recursive functions, like the Fibonacci sequence, and practice debugging them.
+- __Smartwatch__:
+   - Additional Data Members:
+      - `screenSize`: a float representing the display size in inches.
+      - `hasGPS`: a boolean indicating if the watch has GPS.
+      - Overrides `getInfo()` to include screen size and GPS information.
 
- 
+- __FitnessTracker__:
+   - Additional Data Members:
+      - `heartRateMonitor`: a boolean indicating if it has a heart rate monitor.
+      - `batteryLife`: an int representing battery life in hours.
+      - Overrides `getInfo()` to include heart rate monitor and battery life.
+
+- __ARGlasses__:
+   - Additional Data Members:
+      - `fieldOfView`: an int representing the field of view in degrees.
+      - `interactiveSurface`: a boolean indicating if it projects interactive surfaces.
+      - Overrides `getInfo()` to include field of view and interactive surface details.
+
 <div class="requirement">
-After you complete the lab, answer the questions in the README.md file. Enter your answers directly in the README.md file.
+Review the code in testdevices.cpp, WearableDevice.h, and WearableDevice.cpp.  Then write the code for the classes ARGlasses, FitnessTracker, and SmartWatch using the problem statement description above.  Your new classes should extend the WearableDevice class to inherit the functionality. I have created the `.cpp` and `.h` files in the lab repository, and you should write your code where it says `// Write your code here...`
+
+When you finish and test your code by running the main function in the testdevices.cpp file.
+
+```shell
+$ g++ ARGlasses.cpp FitnessTracker.cpp SmartWatch.cpp WearableDevice.cpp testdevices.cpp -o testdevices
+
+$ ./testdevices 
+```
+
+Here is a sample of what the output should look like
+```
+Brand: Apple
+Price: $399.99
+Quantity: 10
+Screen Size: 1.7 inches
+GPS: Yes
+-------------------------------
+Brand: Fitbit
+Price: $149.99
+Quantity: 15
+Heart Rate Monitor: Yes
+Battery Life: 24 hours
+-------------------------------
+Brand: MagicLeap
+Price: $2295
+Quantity: 5
+Field of View: 50 degrees
+Interactive Surface: Yes
+-------------------------------
+Selling 3 Apple smartwatches...
+Remaining stock for Apple smartwatch: 7
+Restocking 5 Fitbit trackers...
+New stock for Fitbit tracker: 20
+```
+</div>
+
++
+
+<div class="requirement">
+When you finish writing and testing the code. In your README.md file write a brief description of how the testdevices.cpp file is using polymorphism. 
+</div>
+
++
+
+<div class="requirement">
+Draw a UML diagram of the completed inventory system.  Include a picture of your diagram in the repository. Put the name of your diagram file in the README.md so we know what to look for when grading.
 </div>
 
 
+## Grading Rubric
+
+### Total Points: 100
+
+- Functionality (30 points)
+   - Correctness (20 points)
+      - Code produces expected output: ___/10
+      - Code handles edge cases appropriately: ___/10
+   - Efficiency (5 points)
+      - Code runs within expected time limits: ___/5
+   - Error Handling (5 points)
+      - Code gracefully handles unexpected inputs or scenarios without crashing: ___/5
+- Completeness (40 points)
+   - All required functionality is implemented: ___/40
+- Code Quality (30 points)
+    - Readability (10 points)
+        - Code has meaningful variable and function names: ___/5
+        - Code is consistently formatted and indented: ___/5
+    - Modularity (10 points)
+        - Code is appropriately divided into functions: ___/5
+        - Each function has a single responsibility: ___/5
+    - Documentation (10 points)
+        - Code includes a header comment explaining the program's purpose: ___/3
+        - Each function has a comment explaining its purpose, inputs, and outputs: ___/5
+        - Inline comments explain non-obvious sections of the code: ___/2
+
+
+## Pair programming
+
+Pair programming is a software development technique in which two programmers work together at one computer. One, the **driver**, writes code while the other, the **navigator**, reviews each line of code as it is typed in. **The two programmers switch roles frequently.**
 
