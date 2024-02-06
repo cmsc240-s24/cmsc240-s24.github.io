@@ -42,20 +42,20 @@ __Text book__: [Programming Principles and Practice Using C++, 2nd Edition](http
     - Read Section 17.9.2 Pointers, references, and inheritance
 
 __Lectures__:
-* Slides: [C++ Basics](lectures/02-Language-Basics.pdf)
-* Slides: [Strings and Functions](lectures/03-Strings-Functions.pdf) 
+* Slides: [C++ Basics](02-Language-Basics.pdf)
+* Slides: [Strings and Functions](03-Strings-Functions.pdf) 
     - Functions 
     - Strings
     - Command-Line Arguments 
-* Slides: [Collections and File I/O](lectures/04-Collections-FileIO.pdf)
+* Slides: [Collections and File I/O](04-Collections-FileIO.pdf)
     - Vectors
     - File I/O 
-* Slides: [Pointers and Memory](lectures/05-Memory-Pointers.pdf)
+* Slides: [Pointers and Memory](05-Memory-Pointers.pdf)
     - Memory
     - Pointers
     - Garbage Values
     - Memory Layout
-* Slides: [References and Heap](lectures/06-References-Heap.pdf) 
+* Slides: [References and Heap](06-References-Heap.pdf) 
     - References
     - Heap (Free store)
         * Allocation
