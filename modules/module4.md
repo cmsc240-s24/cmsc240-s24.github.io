@@ -6,7 +6,7 @@ permalink: module/4
 # Module 4: Classes - Abstraction and Encapsulation
 
 * First read this page then start coding module with the GitHub classroom link below.
-* Github Classroom Link: []()
+* Github Classroom Link: [https://classroom.github.com/a/I8d9v4uJ](https://classroom.github.com/a/I8d9v4uJ)
 
 
 ## Class implementation:
@@ -45,6 +45,6 @@ Example of the include guard:
 #endif
 ```
 
-**Note**: Your code should compile and be well documented. But it does not have to be completely implemented such that everything operates fully.  In other words, some methods may be "stubbed" out to only print out (`cout`) "in method X".  This is an exercise to get comfortable with the C++ `class` syntax.
+**Note**: Your code should compile and be well documented with code comments. But it does not have to be completely implemented such that everything operates fully.  In other words, some methods may be "stubbed" out to only print out (`cout`) "in method X".  This is an exercise to get comfortable with the C++ `class` syntax.
 
 ---
