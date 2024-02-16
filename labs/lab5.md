@@ -78,7 +78,7 @@ For example, your 'Rotor' class should be able to do the following
 3.    Return the index in the `string` at which a given character appears.
 4.    Return the character at a given index in the `string`. 
 
-An example of a rotor `String` is `#GNUAHOVBIPWCJQXDKRYELSZFMT` ... which you are to interpret circularly, so that the last character loops around to the first. If you imagine that the first positition indicates the top spot on the rotor, then:
+An example of a rotor `String` is `#GNUAHOVBIPWCJQXDKRYELSZFMT` ... which you are to interpret circularly, so that the last character loops around to the first. If you imagine that the first position indicates the top spot on the rotor, then:
 
 `#GNUAHOVBIPWCJQXDKRYELSZFMT` rotated one click clockwise is `T#GNUAHOVBIPWCJQXDKRYELSZFM`
 
