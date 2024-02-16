@@ -28,6 +28,12 @@ There is a `test.sh` file in the repository to help you test your program.
 ./test.sh
 ```
 
+If the test script doesn't run initially, you may need to make it executable.
+
+```Shell
+chmod u+x test.sh
+```
+
 
 ## Enigma Machines (simplified model)
 
