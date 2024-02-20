@@ -1,11 +1,11 @@
 ---
 layout: default
-permalink: /lecture/11
+permalink: /lectures/11
 ---
 
 # Lecture 11 -  Scope, Friends, Destructors, Composition, and UML
 
-[Live Code Link]()
+[Live Code Link](https://prod.liveshare.vsengsaas.visualstudio.com/join?5B5DE1E94EB7327781AAACA879E6D58276D0)
 
 ### Objectives
 
