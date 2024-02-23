@@ -14,7 +14,7 @@ permalink: lab/6
 
 * Put your code in the GitHub repository for this lab.
 
-* Github Classroom Link: []()
+* Github Classroom Link: [https://classroom.github.com/a/sZsMbP3e](https://classroom.github.com/a/sZsMbP3e)
 
 
 ### Objective
