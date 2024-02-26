@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /lecture/14
+permalink: /lectures/14
 ---
 
 # Lecture 14: Memory Leaks and Memory Violations
