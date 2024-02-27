@@ -11,9 +11,10 @@ Review the course topics and content that will be assessed on the second quiz.
 
 ## Quiz Details
 * Paper quiz
-* __5 multi-part questions__ (10 points each), these usually ask you to review code and answer questions about the code, write code, or draw something like a UML diagram.
+* __4 multi-part questions__, these usually ask you to review code and answer questions about the code, write code, or draw something like a UML diagram.
 * Total of 50 points
-* 30 minutes to complete the exam
+* 30 minutes to complete the quiz
+
 
 ## What to Study
    
@@ -118,7 +119,8 @@ int main() {
 }
 ```
 Consider the C++ program __Particle.cpp__ above.
-* What does the new keyword do in the main function?
+* What does the `new` keyword do in the main function?
+* What is returned from the expression `new Particle(5.0, 7.5)`?
 * As the code stands, there's a potential issue related to dynamic memory management. Identify the issue and explain why it's problematic.
 * Provide a modification to the code to fix the potential memory management issue you identified.
 
