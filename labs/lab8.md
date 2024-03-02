@@ -10,7 +10,7 @@ permalink: lab/8
 
 * Use the code in the GitHub repository for this lab.
 
-* Github Classroom Link: []()
+* Github Classroom Link: [https://classroom.github.com/a/HiREPVtw](https://classroom.github.com/a/HiREPVtw)
 
 ## Objective
 
