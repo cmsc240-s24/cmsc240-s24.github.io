@@ -20,7 +20,7 @@ title: Schedule
 | 7    | Feb 27: <br /> [Quiz Review](lectures/quiz2-review.md)    | Feb 29: <br /> Lecture Notes: [Memory Leaks and Memory Violations](lectures/14) <br /> **Quiz 2**    | Mar 1:  <br />Lab 7: [Valgrind - Memory debugging tool](labs/lab7.md) (Due Thr Mar 7)               |
 | 8    | Mar 5: <br />Slides: [Make and Makefiles](lectures/15-Make-Makefiles.pdf)  <br /> Module 7: [Build Automation with Make](modules/module7.md) (Due Tue Mar 19)  | Mar 7: <br /> Lecture Notes: [Regular Expressions in C++](lecture/16) <br /> Module 8: [Regular Expressions](https://classroom.github.com/a/zRXzMlfT) (Due Thr Mar 21)     | Mar 8: <br /> Lab 8: [Regular Expressions in C++ and Linux](labs/lab8.md) (Due Thr Mar 21)                 |
 | 9    | Mar 12: <br />**Spring Break**  | Mar 14: <br />**Spring Break** | Mar 15: <br />**Spring Break**               |
-| 10   | Mar 19:     | Mar 21:     | Mar 22:                |
+| 10   | Mar 19: <br /> Slides: [Serialization in C++](lectures/17-Serialization.pdf) <br /> Module 9: [Serialization](modules/module9.md) (Due Thr Mar 28)     | Mar 21:<br /> Slides: [C++ Templates](lectures/18-Templates.pdf) <br /> Module 10: [Templates](modules/module10.md) (Due Thr Mar 28)     | Mar 22:  <br />[Lab 9 Templates](https://cmsc240-s24.github.io/lab/9) (Due Thr Mar 28)              |
 | 11   | Mar 26:     | Mar 28: <br /> **Quiz 3**    | Mar 29:                |
 | 12   | Apr 2:      | Apr 4:      | Apr 5:                 |
 | 13   | Apr 9:      | Apr 11:     | Apr 12:                |

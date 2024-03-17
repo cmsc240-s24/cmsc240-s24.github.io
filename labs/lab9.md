@@ -10,7 +10,7 @@ permalink: lab/9
 
 * Use the code in the GitHub repository for this lab.
 
-* Github Classroom Link: []()
+* Github Classroom Link: [https://classroom.github.com/a/QNslZBCW](https://classroom.github.com/a/QNslZBCW)
 
 ## Objective
 Develop an understanding of __C++ templates__, focusing on their application for code reusability and flexibility.
@@ -39,22 +39,11 @@ Put your code for this exercise in the `area.cpp` file in the `Exercise2` folder
 3. Update the `main` function in `area.cpp` to demonstrate the usage of the calculateArea functions for different shapes and data types.
 4. In the `README.md` file in your GitHub repository. Write a few sentences describing how you used a C++ template to create generic calculateArea functions.
 
-## Exercise 3: Matrix Class Template
-
-Put your code for this exercise in the `Exercise3` folder in your GitHub repository.
-
-1. Write a template class GenericMatrix with a template parameter for the type of values stored in the matrix. 
-2. Put this implementation into the files `GenericMatrix.h` and `GenericMatrix.cpp`
-3. Use the non-generic versions `IntMatrix.h` and `IntMatrix.cpp` files to help guide your coding.
-4. Update the `main` function in `main.cpp` to demonstrate the usage of `GenericMatrix` for different data types. Don't forget to add `GenericMatrix.h` to `main.cpp`.
-5. Modify the `Makefile` so that `GenericMatrix.h` and `GenericMatrix.cpp` are included when building the `main` target.
-6. In the `README.md` file in your GitHub repository. Write a few sentences describing how you used a C++ template to create generic matrix class declaration and implementation.
-
-## Exercise 4: Vector Class Template
+## Exercise 3: Vector Class Template
 
 Implement a generic vector class in C++ using templates, providing a simplified version of the functionality offered by std::vector.
 
-Put your code for this exercise in the `Exercise4` folder in your GitHub repository.
+Put your code for this exercise in the `Exercise3` folder in your GitHub repository.
 
 1. Write a template class GenericVector with a template parameter for the element type. 
 2. Put this implementation into the files `GenericVector.h` and `GenericVector.cpp`
