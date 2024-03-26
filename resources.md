@@ -18,4 +18,5 @@ title: Resources
 * [Guide to Markdown](https://www.markdownguide.org/cheat-sheet/) 
 * [Lecture Code Examples](https://github.com/cmsc240-s24/lecture-code-examples)
 * [Project Example: Music Store](https://github.com/cmsc240-f23/MusicStore)
+* [Big List of Free Online APIs](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/)
 
