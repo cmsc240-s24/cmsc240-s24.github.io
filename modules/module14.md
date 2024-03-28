@@ -3,64 +3,51 @@ layout: default
 permalink: module/14
 ---
 
-# Module 14: Build Pipelines 
+# Module 14: C++ Smart Pointers
 
 * First read this page then start the module with the GitHub classroom link below.
 * Github Classroom Link: []()
 
-## Resources
 
-* [doxygen documentation](https://www.doxygen.nl/manual/index.html)
-* [cppcheck List of Checks](https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/)
-* [doctest tutorial](https://github.com/doctest/doctest/blob/ae7a13539fb71f270b87eb2e874fbac80bc8dda2/doc/markdown/tutorial.md)
+## Exercise 1: Basic Usage of `unique_ptr`
 
-## Setup
-In order to view the generated documentation in HTML, install the __Live Preview__ webpage previewer for VS Code extension.
-
-![LivePreview](../images/LivePreview.png "Live Preview")
+Understand the basic mechanics of `unique_ptr` and how it manages the lifecycle of a heap-allocated object.
 
 
-## Exercise 1 - Document generation with doxygen: 
+1. In the `exercise1` folder of your GitHub repository edit the file `main.cpp` and create a `unique_ptr` to manage a dynamically allocated object of a simple class `Box`. The Box class has one integer member variable and a constructor that sets it.
+2. Implement the `printBoxValue` a function that takes a `unique_ptr<Box>` by value and prints the value of the `Box`'s member variable.
+3. Demonstrate what happens when you try to copy the `unique_ptr`.
+4. In the `README.md` file, explain why it is not allowed. 
 
-1. Review the code in the GitHub repository for this module. 
-2. Edit the file `BankAccount.h` and add doxygen comment annotations to each method, member variable, class, and file. 
-3. These comments should include all of the following annotations when needed: `@file`, `@class`, `@brief`, `@param`, `@return`, `@throw` or `@exception`.
-4. Add a documentation generation target to the `Makefile`.
+
+## Exercise 2: Transfer of Ownership with `unique_ptr`
+
+Learn how to transfer ownership of managed objects with `unique_ptr`.
+
+1. In the `exercise2` folder of your GitHub repository edit the file `main.cpp` and create a `unique_ptr` managing a `Box` object.
+2. Implement the `createBoxWithValue` function that returns a unique_ptr<Box>.
+3. Implement the `transferOwnership` function to transfer ownership of the `Box` object from one `unique_ptr` to another.
+4. In the `README.md` file, explain how the transfer of ownership works.
+
+## Exercise 3: Introduction to `shared_ptr`
+
+Familiarize with the basics of `shared_ptr` and reference counting.
+
+1. Create several `shared_ptr<Box>` instances that all manage the same Box object.
+2. Print the reference count of these shared pointers.
+    ```c++
+    cout << "Reference count: " << sharedSmartPointer.use_count() << endl;
     ```
-    docs: main.cpp BankAccount.cpp BankAccount.h
-        doxygen doxyfile
-    ```
-5. Also add `docs` target as a dependency to the `all` target. 
-6. Run the `Makefile` to build the documentation.
-7. View the documentation and verify your new comments are included.
+3. Demonstrate how the reference count changes as `shared_ptr` instances are created and destroyed. 
+4. In the `README.md` file, explain the different ways to create and destroy a `shared_ptr`.
 
+## Exercise 4: Sharing and Releasing with `shared_ptr`
 
-## Exercise 2 - Static Analysis with cppcheck:
+Learn how `shared_ptr` allows multiple owners and how to release ownership correctly.
 
-1. Add a static analysis target to the `Makefile`.
-    ```
-    static-analysis:
-        cppcheck *.cpp
-    ```
-2. Also add the `static-analysis` target as a dependency to the `all` target.
-3. Run the `Makefile` to view the static analysis results.
-4. Fix any issues in the code found during static analysis.
+1. Create a `shared_ptr<Box>` and another one that shares ownership with the first one.
+2. Implement a function that takes a `shared_ptr<Box>` by value and another one by reference.
+3. Demonstrate how passing by value and by reference to functions affects the reference count.
+4. In the `README.md` file, explain why passing by value and by reference to functions affects the reference count differently.
+5. Use `.reset()` to release ownership and observe how the object is only destroyed when the last `shared_ptr` is gone.
 
-
-## Exercise 3 - Unit Testing with doctest:
-
-1. Review the test case provided in the `BankAccountTests.cpp` file.
-2. Add any tests needed to get full code coverage of the `BankAccount.cpp` file.
-3. Add a target to the `Makefile` that will build the unit test program.
-    ```
-    BankAccountTest: BankAccountTest.cpp BankAccount.cpp BankAccount.h
-        g++ BankAccountTest.cpp BankAccount.o -o BankAccountTest
-    ```
-4. Add a run unit tests target to the `Makefile`.
-    ```
-    run-unit-tests: BankAccountTest
-        ./BankAccountTest
-    ```
-5. Also add the `run-unit-tests` target as a dependency to the `all` target.
-6. Run the `Makefile` to run the unit tests and review the results.
-7. Fix any issues with the code or the tests if needed.
