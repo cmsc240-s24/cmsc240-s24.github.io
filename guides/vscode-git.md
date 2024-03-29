@@ -69,6 +69,7 @@ If you're getting a error saying you need to setup your name and email, then ope
    ```
    git config --global user.name "JohnDoe23"
    git config --global user.email johndoe@example.com
+   git config --global pull.rebase false
    ```
    - Where `JohnDoe23` is replaced with your GitHub username and `johndoe@example.com` is replaced with the email address you used to sign up to GitHub
 

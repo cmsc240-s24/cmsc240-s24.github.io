@@ -12,7 +12,7 @@ permalink: lab/10
 
 * Use the code in the GitHub repository for this lab.
 
-* Github Classroom Link: []()
+* Github Classroom Link: [https://classroom.github.com/a/FHAn9IqQ](https://classroom.github.com/a/FHAn9IqQ)
 
 ## Overview
 In this lab, you will work in groups of three (there may be one or two group of four), experimenting in the use of git (for your local version of a repository) and GitHub (where, via git, the three of you will combine your work). You will ultimately implement a working solution to a collection of C++ classes/programs that includes:
@@ -41,6 +41,13 @@ __Your__ assigned class will be `CharacterVector`, `DoubleVector`, or `IntegerVe
 
 
 ![GitGraphLaunch](../images/GitGraphLaunch.png "Git Graph Launch")
+
+
+* Configure your global git merge options. Open a terminal on the linux machine and run the following command.
+
+```shell
+$ git config --global pull.rebase false
+```
 
 
 ## Steps
