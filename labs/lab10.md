@@ -26,7 +26,7 @@ permalink: lab/10
 - Jinmeng
 - Kasym
 
-#### Group 4
+### Group 4
 - Maxwell
 - Nikoloz
 - Amber
