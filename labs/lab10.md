@@ -8,6 +8,36 @@ permalink: lab/10
 ## Instructions
 * First read this page then start working on lab with the GitHub classroom link below.
 
+### Group 1
+- Braydon
+- Thomas
+- Jade
+- Nate
+
+### Group 2
+- Jessi
+- Isaac
+- Jacob
+- Dhru
+
+### Group 3
+- Konstantinos
+- Charlotte
+- Jinmeng
+- Kasym
+
+#### Group 4
+- Maxwell
+- Nikoloz
+- Amber
+- Michael
+
+### Group 5
+- Caroline
+- Ellen
+- Joseph
+- Toni
+
 * Note: This is a group lab. __Name your group using a combination of the first names of the group members.__ 
 
 * Use the code in the GitHub repository for this lab.
