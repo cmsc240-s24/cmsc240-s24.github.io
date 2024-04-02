@@ -13,7 +13,7 @@ This project presents an opportunity for teams to creatively explore API develop
 
 ## Instructions
 
-1. Complete all of the work in a Group GitHub repository: [https://classroom.github.com/a/klIieHru](https://classroom.github.com/a/klIieHru)
+1. Complete all of the work in a Group GitHub repository: [https://classroom.github.com/a/OponNjH6](https://classroom.github.com/a/OponNjH6)
 2. __Name your group using a combination of the first names of the group members.__ 
 
 ## Team Formation
