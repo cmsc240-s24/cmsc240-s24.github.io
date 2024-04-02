@@ -6,7 +6,7 @@ permalink: module/13
 # Module 13: REST API - Part 3
 
 * First read this page then start the module with the GitHub classroom link below.
-* Github Classroom Link: []()
+* Github Classroom Link: [https://classroom.github.com/a/gnX89gd6](https://classroom.github.com/a/gnX89gd6)
 
 ## Resources
 
@@ -15,7 +15,7 @@ permalink: module/13
 
 ## Exercise 1: 
 
-1. Review the code in the GitHub repository. Take note of the changes since module 11, including additional functionality to __sort__, __search__, and __filter__ toppings in the `toppingFunctions.cpp` file. Also take note of a new member variable in the file `Toppings.h`.
+1. Review the code in the GitHub repository. Take note of the changes since module 12, including additional functionality to __sort__, __search__, and __filter__ toppings in the `toppingFunctions.cpp` file. Also take note of a new member variable in the file `Toppings.h`.
 2. Use the Thunder Client to test the new functionality by using URL parameters for search, sort, and filter(isveg=TRUE).
 
 # Exercise 2
