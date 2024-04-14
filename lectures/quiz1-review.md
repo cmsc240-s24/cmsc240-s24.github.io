@@ -11,7 +11,7 @@ Review the course topics and content that will be assessed on the first quiz.
 
 ## Quiz Details
 * Paper quiz
-* __5 multi-part questions__ (10 points each), these usually ask you to review code and answer questions about the code or draw something like a memory diagram
+* __5 multi-part questions__ (10 points each), you will be asked to review code and answer questions about the code or draw something like a memory diagram
 * Total of 50 points
 * 30 minutes to complete the quiz
 

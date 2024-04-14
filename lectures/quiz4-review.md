@@ -11,7 +11,7 @@ Review the course topics and content that will be assessed on the forth quiz.
 
 ## Quiz Details
 * Paper quiz
-* __5 multi-part questions__, these usually ask you to review code and answer questions about the code, write code, or draw a Git tree.
+* __5 multi-part questions__, you will be asked to review code and answer questions about the code, write code, or draw a Git graph.
 * Total of 50 points
 * 30 minutes to complete the quiz
 
