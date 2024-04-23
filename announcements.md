@@ -13,8 +13,8 @@ title: Announcements
 
 ## Lab-Redo (Due May 3rd)
 
-* You may redo one lab from this semester. 
-* When done, you must email me which lab you updated.
+* You may redo one lab from this semester (this is optional). 
+* When you finish please email me which lab you updated.
 
 
 ## Course evaluations 
