@@ -19,7 +19,7 @@ title: Announcements
 
 ## Course evaluations 
 
-[www.richmond.edu/evalsys](www.richmond.edu/evalsys)
+[www.richmond.edu/evalsys](https://www.richmond.edu/evalsys)
 
 
 ## Presentation Lunch
