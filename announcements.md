@@ -7,7 +7,7 @@ title: Announcements
 
 ## Hiring
 
-* Lab Assistant for CMSC 240 Friday 1:00 pm - 1:50 pm Fall 2024
+* Lab Assistant for CMSC 240 Friday 9:00 pm - 9:50 pm Fall 2024
 * Grader for CMSC 240 Fall 2024	
 
 
